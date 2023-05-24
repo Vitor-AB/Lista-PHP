@@ -2,7 +2,7 @@
 
 // – Escreva uma função que retorne à quantidade de caracteres da última palavra em uma frase
 
-function lastWordQuant(string $frase): int
+function lastWordSize(string $frase): int
 {
     $frase = rtrim($frase, ".");
     $str = explode(" ", $frase);
@@ -17,5 +17,5 @@ $frase4 = "ação";
 $arr = [$frase, $frase1, $frase2, $frase3, $frase4];
 
 foreach ($arr as $fras) {
-    echo "Letras na ultima palavra: " . lastWordQuant($fras) . nl2br("\n");
+    echo "Letras na ultima palavra: " . lastWordSize($fras) . nl2br("\n");
 }

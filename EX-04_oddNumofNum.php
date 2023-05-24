@@ -2,7 +2,7 @@
 
 // – Escreva uma função que retorne o número que aparece o número ímpar de vezes em um array
 
-function oddNumOfNumInArray(array $arr): int|string
+function oddNumOfNum(array $arr): int|string
 {
     $countValues = array_count_values($arr);
     foreach ($countValues as $key => $value) {
@@ -24,5 +24,5 @@ $Arr = [$arr, $arr1, $arr2, $arr3, $arr4, $arr5];
 
 
 foreach ($Arr as $key => $value) {
-    echo "Array " . $key + 1 . " : " .  oddNumOfNumInArray($value) . nl2br("\n");
+    echo "Array " . $key + 1 . " : " .  oddNumOfNum($value) . nl2br("\n");
 }
